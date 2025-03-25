@@ -1,0 +1,13 @@
+services:
+
+  termix:
+    image: ghcr.io/lukegus/termix:latest
+    container_name: termix
+    restart: unless-stopped
+    ports:
+      - "8200:8080"
+    volumes:
+      - ./termix-db:/data/db
+    environment:
+      # Generate random salt here https://www.lastpass.com/features/password-generator (max 32 characters, include all characters for settings)
+      SALT: "2v.F7!6a!jIzmJsu|[)h61$ZMXs;,i+~"
