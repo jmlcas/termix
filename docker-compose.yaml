@@ -11,3 +11,4 @@ services:
     environment:
       # Generate random salt here https://www.lastpass.com/features/password-generator (max 32 characters, include all characters for settings)
       SALT: "2v.F7!6a!jIzmJsu|[)h61$ZMXs;,i+~"
+      PORT: "8080" 
